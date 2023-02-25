@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo Bhaina 2', cursive;
+}
+
+body{
+  background: 
+  linear-gradient(136.31deg, #0C0F07 14.16%, #1F102B 53.39%, #23193E 82.63%);
+  height: 100vh;
+}
+
+#navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#logo{
+  margin: 1rem 4rem;
+  width: 8rem;
+}
+
+.content-item-menu{
+  color: #E0DAED;
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 5rem;
+  justify-content: space-around;
+  font-weight: 700;
+}
+
+.content-item-menu p{
+  margin: 0 2rem;
+}
+
+.content{
+  display: flex;
+  justify-content: space-around;
+}
+
+.content h1 {
+  color: rgba(159, 127, 219, 0.8);
+  text-align: center;
+  line-height:3rem;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.content-input{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.content-input input{
+  background: #9F7FDB;
+  border-radius: 1rem;
+  color:#FFFFFF;
+  padding: 0.5rem 1rem;
+  border: 0;
+}
+
+.content-input input::placeholder{
+  font-weight: 400;
+  color:#FFFFFF;
+  font-size: 1em;
+}
+
+.content-input span{
+  align-self: flex-end;
+  color: #E73550;
+  font-size: 0.75rem;
+  visibility: hidden;
+}
+
+.content-button{
+  display: flex;
+  justify-content: space-between;
+}
+.content-button button, #close{
+  border-radius: 1rem;
+  padding:0.5rem 1rem;
+  border: 0;  
+  width: 47%;
+  font-weight: 700;
+  color:#FFFFFF;
+  font-size: 1em;
+}
+#submit, #close{
+ background: #7834F3;
+}
+
+#about{
+  background: #9F7FDB;
+}
+
+dialog{
+  background-color: #9f7fdbe7;
+  margin: auto;
+  border: 0;
+  border-radius: 3rem;
+  padding:3rem;
+}
+
+.content-dialog{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#msg-sucess, #msg-erro{
+  Color: #FFFFFF;
+  font-size: 1.5rem;
+  margin:0.5rem 0;
+}

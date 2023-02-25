@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+  <title>Site da Lua</title>
+</head>
+<body>
+  <div id="navbar">
+    <img id="logo" src="./images/logo.svg" alt="">
+    <div class="content-item-menu">
+      <p>QUEM SOMOS</p>
+      <p>NOSSO PROPÓSITO</p>
+      <p>SUPORTE</p>
+    </div>
+
+  </div>
+
+  <div class="content">
+
+    <div class="content-input">
+
+      <h1>
+        INSCREVA-SE E <br> VIAJE PARA A LUA <br> GRATUITAMENTE
+      </h1>
+      <div class="content-input">
+        <input type="text" id="name" placeholder="Nome Completo">
+        <span id="msg-name">*Campo Obrigatório*</span>
+      </div>
+      <div class="content-input">
+        <input type="email" id="email" placeholder="Email">
+        <span id="msg-email">*Campo Obrigatório*</span>
+      </div>
+      
+
+      <div class="content-button">
+        <button id="submit" onclick="Submit()">Quero ir pra Lua</button>
+        <button id="about">Mais Informações</button>
+      </div>
+
+    </div>
+    <div id="imagem">
+      <img src="./images/hero.svg" alt="">
+    </div>
+  </div>
+
+  <dialog id="dialog">
+    <div class="content-dialog">
+      <img src="./images/check.png" alt="">
+      <h1 id="msg-sucess">CADASTRO EFETUADO COM SUCESSO!</h1>
+      <button id="close" onclick="CloseModal('dialog')">Fechar</button>
+
+    </div>
+    
+  </dialog>
+
+  <dialog id="dialog-erro">
+    <div class="content-dialog">
+      <img src="./images/alert.png" alt="">
+    <h1 id="msg-erro">Ops, parece que faltam algumas informações!</h1>
+    <button id="close" onclick="CloseModal('dialog-erro')">Completar cadastro</button>
+  </div>
+  </dialog>
+
+  <script src="./script.js"></script>
+</body>
+</html>
